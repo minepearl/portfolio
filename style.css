@@ -1,0 +1,178 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'BM';
+}
+
+/* Font */
+@font-face {
+  font-family: 'BM';
+  src: url('font/BMJUA_ttf.ttf') format('truetype');
+}
+
+/* Body */
+body {
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'BM';
+  font-weight: 300;
+  font-size: 14px;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* 추가된 내용 */
+}
+
+
+
+
+/* Header */
+header {
+  background-color: #FFF;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 80px;
+  padding: 0 20px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li:last-child {
+  margin-right: 0px;
+}
+
+header nav ul li a {
+  color: #777;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 10px 14px;
+  border-radius: 6px;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: #000;
+  background-color: #FFF;
+}
+
+/* Main */
+main {
+  text-align: center;
+  padding: 100px 0;
+  background-color: #f2f2f2;
+  flex-grow: 1;
+  /* 추가된 내용 */
+}
+
+main h1 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+main p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+main a {
+  background-color: #444;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main a:hover {
+  background-color: #000;
+  color: #FFF;
+}
+
+/* Footer */
+footer {
+  background-color: #F2F2F2;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #DDD;
+}
+
+footer p {
+  font-size: 12px;
+  color: #777;
+}
+
+/* 추가된 내용 */
+.hidden {
+  display: none;
+}
+
+#pptList {
+  margin-top: 20px;
+}
+
+#pptList ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#pptList ul li {
+  margin-bottom: 10px;
+}
+
+#pptList ul li button {
+  background-color: #444;
+  color: #FFF;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#pptList ul li button:hover {
+  background-color: #000;
+}
+
+#moreButton {
+  background-color: #444;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#moreButton:hover {
+  background-color: #000;
+  color: #FFF;
+}
